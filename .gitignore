@@ -1,0 +1,41 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+
+# env files
+.env.local.example
+# Intentionally NOT ignoring .env* files as requested by user
+
+# Configuration files (previously kept private, now included for deployment)
+# lib/bot-config.ts
+# lib/encryption.ts
+# lib/system-utils.ts
+# lib/generate-encrypted.ts
+
+# vercel
+.vercel
+
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+# .gitignore
+uploads/
+
+# These are commented out to allow env files to be committed
+# .env.local
+# .env.example
+# .env.local.example

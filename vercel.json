@@ -1,0 +1,26 @@
+{
+  "version": 2,
+  "buildCommand": "npm run vercel-build",
+  "framework": "nextjs",
+  "installCommand": "npm ci",
+  "crons": [
+    {
+      "path": "/api/cron",
+      "schedule": "0 0 * * *"
+    },
+    {
+      "path": "/api/check-reminders",
+      "schedule": "0 6-23 * * *"
+    }
+  ],
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@vercel/next"
+    }
+  ],
+  "env": {
+    "NEXT_TELEMETRY_DISABLED": "1",
+    "NODE_ENV": "production"
+  }
+}
