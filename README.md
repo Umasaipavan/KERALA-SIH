@@ -76,7 +76,7 @@ npm run lint
 - Mobile-friendly and PWA-ready experience
 
 ## Deployment Notes
-
+https://safe-kerala.vercel.app/
 The project is set up for a Next.js deployment workflow and includes Firebase configuration files such as [firebase.json](firebase.json) and [firestore.rules](firestore.rules).
 
 ## Documentation
